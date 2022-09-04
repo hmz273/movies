@@ -7,12 +7,13 @@ import "./App.css";
 const API_URL = "http://www.omdbapi.com?apikey=b6003d8a"
 
 
+
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    searchMovies("Batman");
+    searchMovies();
   }, []);
 
   const searchMovies = async (title) => {
